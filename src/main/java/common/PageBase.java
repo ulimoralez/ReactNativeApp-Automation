@@ -27,6 +27,9 @@ public class PageBase {
         element.clear();
     }
 
+    public boolean isVisible(MobileElement element) {
+        return element.isDisplayed();
+    }
     public void click(MobileElement element) {
         waitForVisibility(element);
         element.click();

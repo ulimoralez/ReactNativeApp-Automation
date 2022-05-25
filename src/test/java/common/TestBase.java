@@ -17,8 +17,7 @@ public class TestBase {
         capabilities.setCapability("automationName", "UiAutomator2");
         capabilities.setCapability("platformVersion", "12.0");
         capabilities.setCapability("deviceName", "Android Emulator");
-        capabilities.setCapability("appPackage", "com.google.android.apps.youtube.music");
-        capabilities.setCapability("appActivity", "com.google.android.apps.youtube.music.activities.MusicActivity");
+        capabilities.setCapability("app", "/Users/ulisesmoralez/Documents/SOLVD/RepositoriosPropios/MyRNDemoApp/src/main/resources/apps/Android-MyDemoAppRN.apk");
         driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
     }
 

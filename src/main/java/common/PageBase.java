@@ -27,9 +27,16 @@ public class PageBase {
         element.clear();
     }
 
+    public boolean containsText(MobileElement element, String text){
+        waitForVisibility(element);
+        if(element.getText() == text) return true;
+        return false;
+    }
+
     public boolean isVisible(MobileElement element) {
         return element.isDisplayed();
     }
+
     public void click(MobileElement element) {
         waitForVisibility(element);
         element.click();
